@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `CODE_OF_CONDUCT.md` with community standards, reporting and enforcement guidelines (#342)
 - GitHub issue templates for bug reports and feature requests, linked from the README (#343)
 - `scripts/optimize-wasm.sh` and `docs/wasm-size-audit.md`: deploy/upgrade/verify now use wasm-opt optimized WASM (−17% to −24%), with optional spec doc stripping (up to −48%) (#344)
+- `CONTRIBUTING.md` with development setup, code style, testing requirements,
+  pull request process, and security-reporting guidance (#340)
+- Troubleshooting guide covering setup, build/test, deployment, invocation,
+  debugging, and FAQ guidance (`docs/troubleshooting.md`) (#338)
+- Monitoring guide covering health checks, operational metrics, alerting rules,
+  and incident response (`docs/monitoring-guide.md`) (#337)
 - Rustdoc examples on all public contract functions for easier integration
 - CHANGELOG.md for tracking version history and breaking changes
 - `transfer()` method on credential-nft contract that explicitly rejects transfers, enforcing soulbound credentials
@@ -35,6 +41,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README now documents the actual `claim_reward(learner, course_id, quiz_id)` signature (#124)
 - README now documents the cross-contract dependency between `learn-token`/`credential-nft` and `progress-tracker` (#125)
 - README now documents that `initialize.sh` passes the `progress-tracker` address to `learn-token` (#126)
+
+### Breaking Changes
+- None.
 
 ## [1.0.0] - Initial Release
 
